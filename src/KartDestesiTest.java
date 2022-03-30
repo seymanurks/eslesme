@@ -7,7 +7,8 @@ public class KartDestesiTest {
         boolean kartEslesmesi, kartBitti=false;
         int sayac = 1;
         do {
-            if(kartBitti) break;
+            if(kartBitti)
+                break;
             System.out.println("----------------------------------------");
             System.out.println(sayac++ + ".tur");
             System.out.println("----------------------------------------");

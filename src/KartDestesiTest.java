@@ -18,7 +18,6 @@ public class KartDestesiTest {
 
                 String kart1 = String.valueOf(kartDestesi.kartDagit());
                 String kart2 = String.valueOf(kartDestesi.kartDagit());
-                String ad = "Halil";
 
                 if(kart1.contains("null") || kart2.contains("null")){ //eşit mi contains
                     System.err.println("UYARIII!!! Kart destesindeki kagitlar bitti!");

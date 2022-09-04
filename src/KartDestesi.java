@@ -1,19 +1,22 @@
 import java.security.SecureRandom;
 
 public class KartDestesi {
+
     private static final SecureRandom rastgeleSayi = new SecureRandom();
-    private static final int kartSayisi = 40;
+    private static final int kartSayisi = 52;
 
     private Kart[] deste = new Kart[kartSayisi];
-    private int mevcutKart = 1;
+    private int mevcutKart = 0;
 
 
     public KartDestesi() {
         String[] numara = {"As", "İkili", "Uclu", "Dortlu", "Besli", "Altili",
-                "Yedili", "Sekizli", "Dokuzlu", "Onlu"};
+                "Yedili", "Sekizli", "Dokuzlu", "Onlu", "Vale", "Kız", "Papaz"};
+
+        String[] tur = {"Kupa", "Sinek", "Karo", "Maca"};
 
         for (int sayac = 0; sayac < deste.length; sayac++) {
-            deste[sayac] = new Kart(numara[sayac % 10]);
+            deste[sayac] = new Kart(numara[sayac % 13], tur[sayac / 13]);
         }
     }
 
